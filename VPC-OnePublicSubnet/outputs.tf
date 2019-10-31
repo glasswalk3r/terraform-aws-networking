@@ -1,3 +1,3 @@
-output "ec2_ip" {
-  value = "ssh -i ${module.ssh.keys_path}/${module.ssh.private_key_name} ec2-user@${aws_instance.ssh.public_ip}"
+output "ec2_public_conn" {
+  value = module.ec2_public.public_conn
 }

@@ -7,5 +7,5 @@ variable "aws_region" {
 }
 
 variable "project_name" {
-  default = "VPC-OnePublicSubnet"
+  default = "VPC-PublicPrivateSubnets"
 }
