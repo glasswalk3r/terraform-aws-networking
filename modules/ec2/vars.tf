@@ -40,3 +40,13 @@ variable "additional_cmd" {
   type        = string
   default     = ""
 }
+
+variable "do_src_dest_check" {
+  description = "If the EC2 instance should do source/destination check or not. Useful for NAT instance configuration"
+  default     = true
+}
+
+variable "ec2_ami_id" {
+  description = "The AMI to use for EC2 instance. Optional."
+  default     = ""
+}
