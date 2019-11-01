@@ -27,11 +27,6 @@ data "aws_ami" "aws_ec2_ami" {
   }
 
   filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  filter {
     name   = "hypervisor"
     values = ["xen"]
   }
